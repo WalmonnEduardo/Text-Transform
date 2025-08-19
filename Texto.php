@@ -1,19 +1,19 @@
 <?php
 class Texto
 {
-    public static function alinhar(array $lista)
+    public function alinhar(array $lista)
     {
         $listaNova = array();
         $listaSemAcentos = array();
         foreach($lista as $l)
         {
-            $listaSemAcentos[] = self::removerAcentos($l);
+            $listaSemAcentos[] = $this->removerAcentos($l);
         }
-        $maior = self::maiorTexto($listaSemAcentos);
+        $maior = $this->maiorTexto($listaSemAcentos);
         $maior += 1;
         foreach($lista as $l)
         {
-            $add = self::verificarAcentos($l);
+            $add = $this->contarAcentos($l);
             $n = $maior+$add;
             for($i = 0;strlen($l) < $n;$i++)
             {
@@ -23,7 +23,7 @@ class Texto
         }
         return $listaNova;
     }
-    public static function maiorTexto(array $lista)
+    public function maiorTexto(array $lista)
     {
         $maior = 0;
         foreach($lista as $l)
@@ -35,7 +35,7 @@ class Texto
         }
         return $maior;
     }
-    public static  function verificarAcentos($texto)
+    public function contarAcentos($texto)
     {
         $add = 0;
         $acentos = array(
@@ -65,7 +65,7 @@ class Texto
         return $add;
 
     }
-    public static function removerAcentos($texto)
+    public function removerAcentos($texto)
     {
         $acentos = array(
             'Á' => 'A', 'À' => 'A', 'Â' => 'A', 'Ã' => 'A', 'Ä' => 'A', 'Å' => 'A',
