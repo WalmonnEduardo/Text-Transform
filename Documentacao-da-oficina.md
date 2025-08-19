@@ -1,4 +1,4 @@
-# Text Transform - Transformando texto em arte
+# Formatando saídas no terminal com orientação a objetos
 
 Ao desenvolver sistemas no terminal nos deparamos com uma tela que a princípio não é muito atraente e com isso nós nos afastamos muito dessa parte por parecer algo muito confuso.  
 A oficina busca usar orientação a objetos para criar uma classe onde você pode usar para editar a forma de como você apresenta seus projetos no terminal, tornando o seu projeto mais organizado.
