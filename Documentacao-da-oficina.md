@@ -31,7 +31,7 @@ O objetivo da orientação a objetos é aproximar a programação do mundo real:
 class Aluno
 {
     // Atributos
-    private string $aluno;
+    private string $nome;
     private int $idade;
     private int $numMatricula;
     private string $email;
@@ -42,14 +42,14 @@ class Aluno
         // Método chamado quando a classe é instanciada
     }
 
-    public function getAluno(): string
+    public function getNome(): string
     {
-        return $this->aluno;
+        return $this->nome;
     }
 
-    public function setAluno(string $aluno): self
+    public function setNome(string $nome): self
     {
-        $this->aluno = $aluno;
+        $this->nome = $nome;
         return $this;
     }
 
