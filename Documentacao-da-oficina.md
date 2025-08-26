@@ -37,53 +37,9 @@ class Aluno
     public string $email;
 
     // Métodos
-    public function __construct()
+    public function seApresentar()
     {
-        // Método chamado quando a classe é instanciada
-    }
-
-    public function getNome(): string
-    {
-        return $this->nome;
-    }
-
-    public function setNome(string $nome): self
-    {
-        $this->nome = $nome;
-        return $this;
-    }
-
-    public function getIdade(): int
-    {
-        return $this->idade;
-    }
-
-    public function setIdade(int $idade): self
-    {
-        $this->idade = $idade;
-        return $this;
-    }
-
-    public function getNumMatricula(): int
-    {
-        return $this->numMatricula;
-    }
-
-    public function setNumMatricula(int $numMatricula): self
-    {
-        $this->numMatricula = $numMatricula;
-        return $this;
-    }
-
-    public function getEmail(): string
-    {
-        return $this->email;
-    }
-
-    public function setEmail(string $email): self
-    {
-        $this->email = $email;
-        return $this;
+        return "Nome: ".$this->nome."\nIdade: ".$this->idade."\nNúmero de matrícula: ".$this->numMatricula."\nEmail: ".$this->email."\n";
     }
 }
 ?>
