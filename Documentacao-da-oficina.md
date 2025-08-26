@@ -31,10 +31,10 @@ O objetivo da orientação a objetos é aproximar a programação do mundo real:
 class Aluno
 {
     // Atributos
-    private string $nome;
-    private int $idade;
-    private int $numMatricula;
-    private string $email;
+    public string $nome;
+    public int $idade;
+    public int $numMatricula;
+    public string $email;
 
     // Métodos
     public function __construct()
