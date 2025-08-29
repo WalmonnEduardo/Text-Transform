@@ -1,6 +1,7 @@
 # Formatando saídas no terminal com orientação a objetos
 
 Ao desenvolver sistemas pelo terminal, muitas vezes nos deparamos com uma interface pouco atrativa, o que pode causar certo afastamento por transmitir a impressão de ser algo confuso.
+
 A oficina tem como objetivo aplicar os conceitos de orientação a objetos para criar uma classe capaz de personalizar a forma de apresentação dos projetos no terminal, tornando-os mais claros e organizados.
 
 ---
